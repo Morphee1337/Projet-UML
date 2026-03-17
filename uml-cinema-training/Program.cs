@@ -1,5 +1,6 @@
 ﻿using UmlCinemaTraining;
 
-// Exercise 2: Director
+// Exercise 3: Movie with a Director
 var director = new Director("Christopher", "Nolan", "UK");
-director.Display();
+var movie = new Movie("Inception", 148, director);
+movie.Display();

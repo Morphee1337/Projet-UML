@@ -6,6 +6,9 @@ namespace UmlCinemaTraining
         private string _lastName;
         private string _country;
 
+        public string FirstName => _firstName;
+        public string LastName => _lastName;
+
         public Director(string firstName, string lastName, string country)
         {
             _firstName = firstName;
