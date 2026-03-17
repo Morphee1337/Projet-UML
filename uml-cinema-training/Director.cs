@@ -1,21 +1,21 @@
-namespace UmlCinemaTraining
+﻿namespace UmlCinemaTraining
 {
     public class Director
     {
-        private string _firstName;
-        private string _lastName;
-        private string _country;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Country { get; set; }
 
         public Director(string firstName, string lastName, string country)
         {
-            _firstName = firstName;
-            _lastName = lastName;
-            _country = country;
+            FirstName = firstName;
+            LastName = lastName;
+            Country = country;
         }
 
         public void Display()
         {
-            System.Console.WriteLine($"Director: {_firstName} {_lastName} ({_country})");
+            System.Console.WriteLine($"Director: {FirstName} {LastName} ({Country})");
         }
     }
 }
