@@ -1,4 +1,4 @@
-namespace UmlCinemaTraining
+﻿namespace UmlCinemaTraining
 {
     public class Director
     {
