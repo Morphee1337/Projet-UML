@@ -9,10 +9,27 @@ namespace UmlCinemaTraining
         public Studio? Studio { get; set; }
         public Director? Director { get; set; }
 
-        public Movie(string title, int duration, Studio? studio = null, Director? director = null)
+        public Movie(string title, int duration)
         {
             Title = title;
             Duration = duration;
+        }
+
+        public Movie(string title, int duration, Director director)
+            : this(title, duration)
+        {
+            Director = director;
+        }
+
+        public Movie(string title, int duration, Studio studio)
+            : this(title, duration)
+        {
+            Studio = studio;
+        }
+
+        public Movie(string title, int duration, Studio studio, Director director)
+            : this(title, duration)
+        {
             Studio = studio;
             Director = director;
         }
