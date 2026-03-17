@@ -7,7 +7,7 @@ namespace UmlCinemaTraining
     {
         public string Name { get; set; }
         public Viewer Viewer { get; set; }
-        public List<Movie> Movies { get; } = new();
+        public List<Movie> Movies { get; set; } = new();
 
         public WatchList(string name, Viewer viewer)
         {

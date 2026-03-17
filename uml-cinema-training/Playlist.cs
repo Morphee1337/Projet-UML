@@ -6,7 +6,7 @@ namespace UmlCinemaTraining
     public class Playlist
     {
         public string Name { get; set; }
-        public List<Movie> Movies { get; } = new();
+        public List<Movie> Movies { get; set; } = new();
 
         public Playlist(string name)
         {
